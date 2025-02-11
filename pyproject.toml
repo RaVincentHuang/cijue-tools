@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "cijue-tools"
+version = "0.1.0"
+authors = [{ name = "Zixiao Huang", email = "huangzixiaopaz@nudt.edu.cn" }]
+description = "A brief description of your project"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests >=2.28.2",
+    "beautifulsoup4 >=4.12.2",  # bs4 的实际包名是 beautifulsoup4
+    "tqdm >=4.65.0"
+]
