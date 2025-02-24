@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 clap = { version = "4.5.28", features = ["cargo"] }
 pyo3 = { version = "0.23.4", features = ["auto-initialize"] }
+colored = "3.0.0"
 
 [build-dependencies]
 pyo3-build-config = { version = "0.23.4"}

@@ -1,5 +1,7 @@
 use pyo3::prelude::*;
 use pyo3::ffi::c_str;
+use colored::Colorize;
+
 
 pub mod paper;
 pub mod common;
@@ -17,7 +19,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     match matches.subcommand() {
         Some(("paper", sub_m)) => paper::paper_main(sub_m)?,
-        _ => unreachable!(),
+        _ => println!("{}", "No subcommand was used!".red()),
     }
 
     Ok(())
